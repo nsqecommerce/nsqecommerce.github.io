@@ -19,144 +19,77 @@
                     </main>
                     <hr>
                     <section>
-                        <p>For Applying as a Software Engineer (Front-End / Full-Stack) please do following test (Choose 2 from all) and <a target="_blank" href="https://forms.gle/VoNmHhsw3wpeKntR8">submit via this form.</a></p>
+                        <p>For Applying as a Software Engineer (Front-End / Full-Stack) please do following test (Choose 1 from all) and <a target="_blank" href="https://forms.gle/VoNmHhsw3wpeKntR8">submit via this form.</a></p>
                     </section>
                     <hr>
-                    <div class="testdome-questiondetails" data-questionid="62228" data-questiontype="4">
-                        <div class="form-group question-description no-margin-top narrow">
-        <p>An image gallery is a set of images with corresponding&nbsp;<em>remove</em>&nbsp;buttons. This is the HTML code for a gallery with two images:</p>
-        <pre><code class="language-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://bit.ly/3lmYVna"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"remove"</span>&gt;</span>X<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://bit.ly/3flyaMj"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"remove"</span>&gt;</span>X<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
-        
-        <p>Implement the&nbsp;<em>ImageGallery</em>&nbsp;component that accepts a <em>links </em>prop and renders the gallery described above so that the first item in the <em>links</em> prop is the <em>src </em>attribute of the first image in the gallery. It should also implement&nbsp;the following logic: When the button&nbsp;is clicked, the image&nbsp;that is in the same div as the button&nbsp;should be removed from the gallery.</p>
-        
-        <p>For example, after the first image has been removed from the gallery above, it's HTML code should look like this:</p>
-        
-        <pre><code class="language-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://bit.ly/3flyaMj"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"remove"</span>&gt;</span>X<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>            </div>
-        
-        
-        
-        <div class="form-group mbot20">
-        <div class="row">
-            <div class="col-xs-12">
-                    <div class="stacked-left pull-left">
-                        HTML5, CSS3, React v16 (available as React and ReactDOM)
-        &nbsp;
-                            <i class="glyphicon glyphicon-question-sign testdome-environmentinfo" data-title="<p>Your code will be evaluated as HTML5 code containing CSS3 source code running in the Chrome browser (version 83). In addition, the following files are available:</p>
-        <ul>
-            <li>react.production.min.js</li>
-            <li>react-dom.production.min.js</li>
-            <li>babel.min.js</li>
-        </ul><p>For longer problems, we recommend that you copy/paste to/from jsfiddle.net or a similar development environment.</p>" data-original-title="" title=""></i>
+                    <div>
+                        <h3 style="text-decoration: underline">1. Web Calculator</h3>
+                        <h4>Objective</h4>
+                        <p>
+                            สร้างโปรแกรม Web Calculator (เครื่องคิดเลขบนเว็บไซต์) โดยใช้ React Framework และ ภาษา Javascript หรือ TypeScript ในการพัฒนา
+                        </p>
+                        <h4>Requirements</h4>
+                        <ul>
+                            <li>ผู้ใช้งานสามารถ กดปุ่มตัวเลขบนหน้าจอตัวอย่าง และ มีตัวเลขขึ้นในช่องแสดงผล เหมือนเครื่องคิดเลขในชีวิตประจำวันของเรา</li>
+                            <li>สามารถ บวก ลบ คูณ หาร ตัวเลข 2 ค่า ตามรูปตัวอย่างได้. และ เมื่อกด = แสดงผลลัพธ์ได้อย่างถูกต้อง</li>
+                            <li>มีปุ่ม AC สำหรับ ล้างค่าที่กด เพื่อเริ่มต้นใช้งานใหม่ได้อีกครั้ง</li>
+                            <li>จัดเรียงปุ่มให้มีลักษณะเหมือนเครื่องคิดเลขจริงๆ (ไม่ต้องมีสีสันสวยงามมาก)</li>
+                        </ul>
+                        <h4>Bonus (ไม่จำเป็นต้องทำก็ได้ หรือ เลือกทำบางข้อได้)</h4>
+                        <ul>
+                            <li>จัดเรียงหน้าตาให้สวยงาม</li>
+                            <li>เปลี่ยนสี เปลี่ยน ธีม ของเครื่องคิดเลขได้</li>
+                            <li>Support Responsive หน้าจอต่างๆ ได้</li>
+                        </ul>
+                        <h4>Evaluation Criteria</h4>
+                        <ul>
+                            <li>React best practices</li>
+                            <li>อ่าน Code เข้าใจง่าย และ ง่ายต่อการนำไปต่อยอดได้</li>
+                            <li>โปรแกรมสามารถทำงานได้ ตรงตาม Requirements</li>
+                            <li>มีการจัดการข้อผิดพลาดจากการใช้งานโปรแกรม (Error handling)</li>
+                        </ul>
+                        
                     </div>
-                <div class="pull-right stacked-right">
-                    <input type="button" class="btn btn-xs btn-primary testdome-copy-to-ide" title="" data-title="<p>Copies entire coding box to clipboard, so you can paste it to your IDE.</p><p>For longer problems, we recommend that you copy/paste to/from jsfiddle.net or a similar development environment.</p>" value="Copy to IDE" data-original-title="">&nbsp;&nbsp;
-                        <a href="/questions/original/62228" target="_blank" class="btn btn-xs btn-primary testdome-show-starting-code" id="testdome-show-starting-code">Show starting code</a>
-        
-        
-                    <div class="inline-block position-relative">
-                        <a class="btn btn-xs btn-primary dropdown-toggle hidden" id="testdome-solution-history-toggle" data-toggle="dropdown" href="#">
-                            Solution History&nbsp;<span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-right" id="testdome-solution-history-dropdown" role="menu">
-                            <li>
-                                <a href="/questions/original/62228" target="_blank" class="small testdome-show-starting-code">Starting code</a>
+                    <hr>
+                    <div>
+                        <h3 style="text-decoration: underline">2. Expense Tracker</h3>
+                        <h4>Objective</h4>
+                        <p>สร้างโปรแกรม Expense Tracker (โปรแกรมบันทึกรายรับรายจ่าย) อย่างง่าย โดยใช้ React Framework และ ภาษา Javascript หรือ TypeScript ในการพัฒนา </p>
+                        <h4>Requirements</h4>
+                        <ul>
+                            <li>ผู้ใช้งานสามารถ (สร้าง/แก้ไข/ลบ) รายการ รายรับ รายจ่าย ได้ โดยมีข้อมูลดังนี้
+                                <ul>
+                                    <li>วันที่ และ เวลา ของ รายการ</li>
+                                    <li>ชื่อ</li>
+                                    <li>ประเภทรายการ (รายรับ / รายจ่าย)</li>
+                                    <li>หมวดหมู่ ของรายการ</li>
+                                    <li>จำนวนเงิน</li>
+                                </ul>
                             </li>
+                            <li>แสดงตารางรายการ ที่บันทึก</li>
+                            <li>จัดเรียง และ กรอง ข้อมูลตาม  วันที่, ชื่อ, หมวดหมู่, จำนวนเงิน และ ประเภทรายการ ได้</li>
+                            <li>แสดง Chart สำหรับสรุปผลของ รายรับ และ รายจ่าย ตามหมวดหมู่ และ ตามระยะเวลาที่กำหนดได้ (ตามดุลพินิจของผู้พัฒนา)</li>
+                            <li>ผู้ใช้สามารถ เพิ่ม/ลบ/แก้ไข หมวดหมู่ได้</li>
+                            <li>ให้ logic การคำนวณทั้งหมดอยู่ที่โปรแกรม Front end</li>
+                            <li>Design UI ของโปรแกรม ให้ใช้งานง่าย (ตามดุลพินิจของผู้พัฒนา)</li>
+                            <li>โปรแกรมรองรับการใช้งานได้หลากหลายหน้าจอ (responsive)</li>
+                            <li>ไม่จำเป็นต้องมีระบบผู้ใช้งาน</li>
+                        </ul>
+                        <h4>Bonus (เลือกทำบางข้อได้)</h4>
+                        <ul>
+                            <li>พัฒนา Front-End Framework โดยใช้ Ant Design</li>
+                            <li>พัฒนาโปรแกรม Backend สำหรับบันทึกข้อมูล โดยรับข้อมูลผ่าน API (เลือกใช้ Stack ที่ถนัดได้เลย)</li>
+                            <li>บันทึกข้อมูลในโปรแกรม Browser ป้องกันข้อมูลสูญหายเมื่อ Refresh Browser</li>
+                            <li>สร้าง docker-compose.yml ให้ผู้ที่ checkout code ใช้งานได้ทันที</li>
+                        </ul>
+                        <h4>Evaluation Criteria</h4>
+                        <ul>
+                            <li>React best practices</li>
+                            <li>อ่าน Code เข้าใจง่าย และ ง่ายต่อการนำไปต่อยอดได้</li>
+                            <li>โปรแกรมสามารถทำงานได้ ตรงตาม Requirements</li>
+                            <li>มีการจัดการข้อผิดพลาดจากการใช้งานโปรแกรม (Error handling)</li>
                         </ul>
                     </div>
-                </div>
-            </div>
-        </div>    <div class="margin-top-small">
-                
-        
-            <form autocomplete="off">
-                <div class=" question-content">
-                    <!--rt_nocontent_start--><textarea rows="4" cols="50" class="testdome-codebox" contenteditable="true" name="Answer_Text" disabled="" data-mode="text/jsx" data-indentunit="2" data-readonly="true" data-uid="682b916c-b3fd-4e37-bb59-50132d2e9d7a" style="display: none;">// React is loaded and is available as React and ReactDOM
-        // imports should NOT be used
-        class ImageGallery extends React.Component {
-          render() {
-            return null;
-          }
-        }
-        
-        document.body.innerHTML = "&lt;div id='root'&gt; &lt;/div&gt;";
-          
-        const rootElement = document.getElementById("root");
-        const links = ["https://bit.ly/3lmYVna", "https://bit.ly/3flyaMj"];
-        ReactDOM.render(&lt;ImageGallery links={ links } /&gt;,
-                        rootElement);
-        document.querySelectorAll('.remove')[0].click();
-        console.log(rootElement.innerHTML);</textarea><div class="CodeMirror cm-s-CodeMirror-HighlightJS-VS"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 5px; left: 46px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 41px; margin-bottom: -7px; border-right-width: 23px; min-height: 264px; min-width: 652.438px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>16</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 16px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// React is loaded and is available as React and ReactDOM</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// imports should NOT be used</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">class</span> <span class="cm-def">ImageGallery</span> <span class="cm-keyword">extends</span> <span class="cm-variable">React</span>.<span class="cm-property">Component</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  <span class="cm-property">render</span>() {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">    <span class="cm-keyword">return</span> <span class="cm-atom">null</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">document</span>.<span class="cm-property">body</span>.<span class="cm-property">innerHTML</span> <span class="cm-operator">=</span> <span class="cm-string">"&lt;div id='root'&gt; &lt;/div&gt;"</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">const</span> <span class="cm-def">rootElement</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">getElementById</span>(<span class="cm-string">"root"</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">const</span> <span class="cm-def">links</span> <span class="cm-operator">=</span> [<span class="cm-string">"https://bit.ly/3lmYVna"</span>, <span class="cm-string">"https://bit.ly/3flyaMj"</span>];</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">ReactDOM</span>.<span class="cm-property">render</span>(<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ImageGallery</span> <span class="cm-attribute">links</span>={ <span class="cm-variable">links</span> } <span class="cm-tag cm-bracket">/&gt;</span>,</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">                <span class="cm-variable">rootElement</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">document</span>.<span class="cm-property">querySelectorAll</span>(<span class="cm-string">'.remove'</span>)[<span class="cm-number">0</span>].<span class="cm-property">click</span>();</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">rootElement</span>.<span class="cm-property">innerHTML</span>);</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 23px; width: 1px; border-bottom: 0px solid transparent; top: 264px;"></div><div class="CodeMirror-gutters" style="height: 287px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div><!--rt_nocontent_end-->
-                </div>
-            </form>
-        
-            </div>
-        </div>
-        
-        
-            <div class="testdome-verify-box">
-                <input id="Run-62228" name="command" type="button" value="Run" class="btn btn-primary btn-lg btn-primary-fixedbg testdome-verify">
-        
-                
-                <br>
-                <div class="clearfix"></div>
-                <br>
-                    <ul class="nav nav-tabs navbar-right no-margin verify-box-tabs pull-right" role="tablist">
-                    <li role="presentation"><a href="#output-3e6960d3-8879-41c4-b293-ba0d2df5f262" aria-controls="output-3e6960d3-8879-41c4-b293-ba0d2df5f262" role="tab" data-toggle="tab" class="testdome-outputtab">Output</a></li>
-                    <li role="presentation" class="active">
-                        <a href="#tests-3e6960d3-8879-41c4-b293-ba0d2df5f262" aria-controls="tests-3e6960d3-8879-41c4-b293-ba0d2df5f262" role="tab" data-toggle="tab" class="testdome-teststab">
-        Tests: 0 pass / 4 fail                </a>
-                    </li>
-            </ul>
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane " id="output-3e6960d3-8879-41c4-b293-ba0d2df5f262"><div class="verify-console padded-box-small output-console testdome-outputconsole"></div></div>
-                    <div role="tabpanel" class="tab-pane active" id="tests-3e6960d3-8879-41c4-b293-ba0d2df5f262">
-                        <div class="verify-console testdome-verifyconsole">
-                            <ul class="test-cases"><li><span class="glyphicon glyphicon-remove-sign testError" aria-hidden="true"></span>&nbsp;&nbsp;Example case: Wrong answer <i class="glyphicon glyphicon-question-sign" data-content="Your submission returned a wrong answer for the test case. Edit the example submission to test your solution's handling of various edge cases." data-original-title="" title=""></i></li><li><span class="glyphicon glyphicon-remove-sign testError" aria-hidden="true"></span>&nbsp;&nbsp;ImageGallery will render the correct list: Wrong answer <i class="glyphicon glyphicon-question-sign" data-content="Your submission returned a wrong answer for the test case. Edit the example submission to test your solution's handling of various edge cases." data-original-title="" title=""></i></li><li><span class="glyphicon glyphicon-remove-sign testError" aria-hidden="true"></span>&nbsp;&nbsp;Remove a single image: Wrong answer <i class="glyphicon glyphicon-question-sign" data-content="Your submission returned a wrong answer for the test case. Edit the example submission to test your solution's handling of various edge cases." data-original-title="" title=""></i></li><li><span class="glyphicon glyphicon-remove-sign testError" aria-hidden="true"></span>&nbsp;&nbsp;Remove multiple images: Wrong answer <i class="glyphicon glyphicon-question-sign" data-content="Your submission returned a wrong answer for the test case. Edit the example submission to test your solution's handling of various edge cases." data-original-title="" title=""></i></li></ul>
-                        </div>
-                    </div>
-            </div>
-        <div data-name="True" class="testdome-outputsupported"></div>
-            </div>
-        
-        
-        
-        
-        <div class="form-group bigger-font">
-            <p class="margin-bottom text-pre-wrap testdome-scoredescription"></p>
-        
-        
-        
-            <div id="ShowSharingControl" data-name="true"></div>
-            <div id="SharingControl" class="hidden">
-                <input type="hidden" id="DialogMessage0" value="Expert needed! Do you know how to solve this? ">
-                <input type="hidden" id="DialogMessage50" value="I solved this problem {0}% correct. Do you know how to make it a perfect 100%? ">
-                <input type="hidden" id="DialogMessage100" value="Just got a perfect 100%! Can you match my score? :) ">
-                <input type="hidden" id="TwitterShareUrl" value="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.testdome.com%2Fquestions%2F62228&amp;text=">
-                <div class="dropdown inline-block">
-                    <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="ChallengeOptions">Ask a friend for help <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.testdome.com%2Fquestions%2Freact-js%2Fimage-gallery-app%2F62228" id="FacebookShare" target="_blank">via Facebook</a></li>
-                        <li><a href="#" id="LinkedInShare">via LinkedIn</a></li>
-                        <li><a href="#" id="TwitterShare" target="_blank">via Twitter</a></li>
-                        <li><a href="#" id="ShareByEmail" data-subject="Expert needed!">via Email</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div></div>
                     <hr>
                     <section>
                         <h3>About us</h3>
