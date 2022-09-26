@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <title>N-Squared Data Engineer Code Challenges</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-10">
+                    <main>
+                        <div class="py-5 text-center">
+                            <img src="./statics/images/logo.png">
+                        </div>
+                        <div>
+                            <h1>N-Squared Data Engineer Code Challenges</h1>
+                        </div>
+                    </main>
+                    <hr>
+                    <section>
+                        <p>For Applying as a Data Engineer please do following test (Choose 1 or more from all) and <a target="_blank" href="https://forms.gle/VoNmHhsw3wpeKntR8">submit via this form.</a></p>
+                    </section>
+                    <hr>
+                    <div>
+                        <h3 style="text-decoration: underline">1. Basic Study about Airflow</h3>
+                        <p>Please Checkout or Download for this assignment. <a href="./challenge/dataeng/dataeng_airflow/" target="_blank" >[Here]</a></p>
+                        <h4>Prerequisites</h4>
+                        <p>Please follow the following steps to set up the environment. This must be run on <a target="_blank" href="https://en.wikipedia.org/wiki/Unix-like" >*nix like</a> systems. We have tested this on both Mac and Linux environments. If you are using windows please use a virtual box to install an ubuntu server and follow the steps:</p>
+                        <ul>
+                            <li>Create a fresh virtualenv w/ Python 3.6 and also install docker and docker compose. - Our docker versions are docker 17.12.0 and docker-compose 1.18.0.</li>
+                            <li>Run <b>make init</b> to set up the environment and install all the prerequisites.</li>
+                            <li>Run <b>make test</b> to make sure all of the smoke tests are passing without any issues</li>
+                            <li>Run <b>make run</b> to bring up the airflow server:
+                                <ul>
+                                    <li>Once this command is executed, the airflow server should be visible at http://localhost:8080</li>
+                                    <li>You should be able to see a DAG name example_dag</li>
+                                    <li>Along with airflow, postgres database would be installed to store the airflow metadata at port 5432. Please use `docker ps` command to see the containers that are up and the ports they bound into. Connection to postgres is essential to accomplish the task below. If you are using SQLAlchemy the connection can be accessed using the following string: <b>postgresql+psycopg2://airflow:airflow@localhost:5432/airflow</b></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4>Task:</h4>
+                        <p>For this challenge, you would be building the following data pipeline using Apache Airflow.</p>
+                        <div>
+                            <b>Step 1:</b>
+                            <p>You would create a DAG to fetch the users information from a <a href="https://jsonplaceholder.typicode.com" target="_blank" >fake json site</a>. The resource endpoint are /users, /posts, /comments, /albums and /photos . The DAG should be triggered every 45 minutes</p>
+                        </div>
+                        <div>
+                            <b>Step 2:</b>
+                            <p>The user data is in a nested JSON format. <a href="https://jsonplaceholder.typicode.com/users" target="_blank" >[Here]</a> is how it looks like.  Convert this data into a table format (for example python list of list object or a pandas dataframe).</p>
+                        </div>
+                        <div>
+                            <b>Step 3:</b>
+                            <p>Create a branch operator to accomplish the following conditions:</p>
+                            <div style="margin-left: 50px;">
+                                <b>case A</b>
+                                <p>Target Table Missing: Check if the target table to load the above information exist in postgres destination. If the target table doesn't exist (for example when you load the data for the first time), create tables in the database <b>airflow</b> and load the data.</p>
+                            </div>
+                            <div style="margin-left: 50px;">
+                                <b>case B</b>
+                                <p>Target Table Exists: If the target table exists, continue to load the data. Please remember that these endpoint fetches the same static data, so its okay to fetch the same data every time the operator is trigerred.</p>
+                            </div>
+                            <p>For this step, you can use the psycopg2 python driver which is already provided to you. The connection string is visible on airflow.cfg file or is also mentioned above.</p>
+                        </div>
+                        <h4>Bonus</h4>
+                        <div>
+                            <p>Additional Bonus for:</p>
+                            <ul>
+                                <li>Implementing load specific related user datas into tables such as userId=1,3,7,10.</li>
+                                <li>Implementing <b>airflow sensors</b> to check for http response while fetching the user data in step 1. You can be creative by providing a slackoperator or email operator in case of failed http response.</li>
+                            </ul>
+                        </div>
+                        <h4>What To Submit</h4>
+                        <p>
+                            To build a pipeline, you would need to create a DAG. A sample DAG is given in the location dags/example_dag.py it will be necessary to create a DAG. We have provided an example DAG for reference, <b>dags/dag_example.py</b>. When you create a DAG, please place it into this directory and it would automatically be mounted onto the docker container when you run the container using <b>make run</b>
+                        </p>
+                        <p>
+                            Once you've completed your work, you can submit zip file to <a target="_blank" href="https://forms.gle/VoNmHhsw3wpeKntR8">this form.</a>
+                        </p>
+                        <h4>Some Materials To Read</h4>
+                        <p>For people not familiar with Airflow, here are some good references.</p>
+                        <ul>
+                            <li>Get started developing workflows with Apache Airflow <a target="_blank" href="http://michal.karzynski.pl/blog/2017/03/19/developing-workflows-with-apache-airflow/">link.</a></li>
+                            <li>Airflow Docs are at <a target="_blank" href="https://airflow.apache.org/">link.</a></li>
+                            <li>Another nice medium post <a target="_blank" href="https://medium.com/airbnb-engineering/airflow-a-workflow-management-platform-46318b977fd8">link.</a></li>
+                        </ul>
+                        <p><b>Note * </b>If you have any question please feel free to ask sukhum@nsquared.asia </p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
